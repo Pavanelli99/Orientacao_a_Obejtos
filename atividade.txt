@@ -1,0 +1,9 @@
+Criar um robo p/ se movimentar em uma mesa;
+-> mover (direção, qtdCasas mover);
+
+O construtor deve iniciar o robo em posição especifica;
+
+O mover recebe a direção(esq, dir, cima, baixo);
+
+A cada nova mover imprimir a posição origem;
+
