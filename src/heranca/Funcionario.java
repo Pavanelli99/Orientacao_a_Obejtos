@@ -13,9 +13,10 @@ public class Funcionario extends Pessoa {
 
     @Override
     public String toString() {
-        return "{" +
-            " matricula = '" + getMatricula() + "'" +
-            "}";
+        return (
+            "{nome= " + this.nome +" matricula = '" + getMatricula() + "'" +
+            "}" 
+            );
     }
 
 }

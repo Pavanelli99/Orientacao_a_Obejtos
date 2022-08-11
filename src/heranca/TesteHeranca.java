@@ -20,8 +20,8 @@ public class TesteHeranca{
         Funcionario Eduardo = new Funcionario();
         Eduardo.setMatricula(12345670);
         Eduardo.toString();
-
-    
+        System.out.println(Eduardo.toString());
+      
     
     }
 
