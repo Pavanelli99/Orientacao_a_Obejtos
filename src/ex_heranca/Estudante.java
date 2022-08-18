@@ -37,5 +37,10 @@ public class Estudante extends Pessoa{
         this.dtInicio = dtInicio;
     }
 
+    @Override
+    public String toString(){
+        return "RA: " + this.ra;
+    }
+
 
 }

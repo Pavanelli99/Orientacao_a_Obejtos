@@ -30,5 +30,10 @@ public class Autor extends Pessoa{
         this.qtdLivros = qtdLivros;
     }
 
+    @Override
+    public String toString(){
+        return "Formação: " + this.formacao;
+    }
+
     
 }

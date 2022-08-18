@@ -41,9 +41,24 @@ public class TesteExHeranca {
         LocalDate dataNascEst= LocalDate.of(1999, Month.DECEMBER, 22);
         est.setDataNasc(dataNascEst);
         est.setCurso("Tads");
-        est.setRa("120304330404");
+        est.setRa("12404");
         LocalDate dataInit = LocalDate.of(2020, Month.JANUARY, 10);
         est.setDtInicio(dataInit);
+
+        //Objeto Emprestimo 
+        Emprestimo emprestimo1 = new Emprestimo();
+        emprestimo1.setEstudante(est);
+        emprestimo1.setFuncionario(func);
+        emprestimo1.setLivro(livroPOO);
+        LocalDate dtEmprestimo = LocalDate.of(2022, Month.JULY, 01);
+        LocalDate dtDevolucao = LocalDate.of(2022, Month.JULY, 20);
+        emprestimo1.setDtEmprestimo(dtEmprestimo);
+        emprestimo1.setDtDevolucao(dtDevolucao);
+
+        
+
+
+
        
 
 
