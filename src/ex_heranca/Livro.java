@@ -3,8 +3,6 @@ package ex_heranca;
 import java.time.LocalDate;
 import java.util.Scanner;
 
-import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
-
 public class Livro {
 
     private String titulo;
@@ -43,7 +41,7 @@ public class Livro {
 
     @Override
     public String toString(){
-        return ("Titulo\t " + this.titulo + "\nEditora\t" + this.editora + "\nData Lanc:\t" + this.dtLancamento);
+        return ("Titulo:\t" + this.titulo + "\nEditora:\t" + this.editora + "\nData Lanc:\t" + this.dtLancamento);
         //DateTimeFormater
     }
 
@@ -78,7 +76,7 @@ public class Livro {
 
         LocalDate d = LocalDate.of(y, m, dd);
 
-       // in.close();
+        in.close();
         return novoLivro;
 
     }

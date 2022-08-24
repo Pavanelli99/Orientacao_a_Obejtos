@@ -24,7 +24,7 @@ public class TesteExHeranca {
 
 
         //Objeto Funcionario
-        Funcionario func = new Funcionario();
+        Funcionario func = new Funcionario("joao");
         func.setNome("Eduardo");
         func.setEndereco("Rua seila");
         LocalDate dataNascEd = LocalDate.of(1999, Month.DECEMBER, 22);
@@ -35,7 +35,7 @@ public class TesteExHeranca {
         func.setMatricula("1203040404");
 
         //Objeto Estudante
-        Estudante est = new Estudante();
+        Estudante est = new Estudante("Teste");
         est.setNome("Eduardo");
         est.setEndereco("Rua seila");
         LocalDate dataNascEst= LocalDate.of(1999, Month.DECEMBER, 22);

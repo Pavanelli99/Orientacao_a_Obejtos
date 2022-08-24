@@ -25,6 +25,10 @@ public class SistemaHeranca {
     };
 
     private static List<Livro> livros = new ArrayList<Livro>();
+    private static List<Estudante> estudantes = new ArrayList<Estudante>();
+    private static List<Funcionario> funcionarios = new ArrayList<Funcionario>();
+    private static List<Autor> autores = new ArrayList<Autor>();
+    
 
     private static Scanner buffer = new Scanner(System.in);
 
@@ -40,13 +44,6 @@ public class SistemaHeranca {
             
         }
     }
-
-       // List<Estudante> estudantes = new ArrayList<Estudante>();
-       // List<Funcionario> funcionarios = new ArrayList<Funcionario>();
-       // List<Autor> autores = new ArrayList<Autor>();
-       // List<Livro> livros = new ArrayList<Livro>();
-
- 
      
     //----------------------------------------------------------------------
     public static void printMenu(){
@@ -66,7 +63,46 @@ public class SistemaHeranca {
             System.out.println("\nLivro Cadastrado");
             System.out.println(novoLivro.toString());
             livros.add(novoLivro);
+            break;
 
+            //Funcionario
+            case 2:
+            Funcionario novoFunc = Funcionario.cadastrarFunc();
+            System.out.println("\nFuncionario Cadastrado");
+            System.out.println(novoFunc.toString());
+            funcionarios.add(novoFunc);
+            break;
+
+            //Estudante
+            case 3:
+            Estudante novoEstudante = Estudante.cadastrarEstudante();
+            System.out.println("\nEstudante Cadastrado");
+            System.out.println(novoEstudante.toString());
+            estudantes.add(novoEstudante);
+            break;
+
+            //Autor
+            case 4:
+            Estudante novoEstudante = Estudante.cadastrarEstudante();
+            System.out.println("\nEstudante Cadastrado");
+            System.out.println(novoEstudante.toString());
+            estudantes.add(novoEstudante);
+            break;
+
+            //Emprestimo
+            case 5:
+            Estudante novoEstudante = Estudante.cadastrarEstudante();
+            System.out.println("\nEstudante Cadastrado");
+            System.out.println(novoEstudante.toString());
+            estudantes.add(novoEstudante);
+            break;
+
+            //Receber Emprestimo
+            case 6:
+            Estudante novoEstudante = Estudante.cadastrarEstudante();
+            System.out.println("\nEstudante Cadastrado");
+            System.out.println(novoEstudante.toString());
+            estudantes.add(novoEstudante);
             break;
 
             default:
