@@ -28,7 +28,7 @@ public class SistemaHeranca {
     private static List<Estudante> estudantes = new ArrayList<Estudante>();
     private static List<Funcionario> funcionarios = new ArrayList<Funcionario>();
     private static List<Autor> autores = new ArrayList<Autor>();
-    
+    private static List<Emprestimo> emprestimos = new ArrayList<Emprestimo>();
 
     private static Scanner buffer = new Scanner(System.in);
 
@@ -63,7 +63,7 @@ public class SistemaHeranca {
             System.out.println("\nLivro Cadastrado");
             System.out.println(novoLivro.toString());
             livros.add(novoLivro);
-            break;
+           // break;
 
             //Funcionario
             case 2:
@@ -71,7 +71,7 @@ public class SistemaHeranca {
             System.out.println("\nFuncionario Cadastrado");
             System.out.println(novoFunc.toString());
             funcionarios.add(novoFunc);
-            break;
+           // break;
 
             //Estudante
             case 3:
@@ -79,33 +79,33 @@ public class SistemaHeranca {
             System.out.println("\nEstudante Cadastrado");
             System.out.println(novoEstudante.toString());
             estudantes.add(novoEstudante);
-            break;
+            //break;
 
             //Autor
             case 4:
-            Estudante novoEstudante = Estudante.cadastrarEstudante();
-            System.out.println("\nEstudante Cadastrado");
-            System.out.println(novoEstudante.toString());
-            estudantes.add(novoEstudante);
-            break;
+            Autor novoAutor = Autor.cadastrarAutor();
+            System.out.println("\nAutor Cadastrado");
+            System.out.println(novoAutor.toString());
+            autores.add(novoAutor);
+            //break;
 
             //Emprestimo
             case 5:
-            Estudante novoEstudante = Estudante.cadastrarEstudante();
-            System.out.println("\nEstudante Cadastrado");
-            System.out.println(novoEstudante.toString());
-            estudantes.add(novoEstudante);
-            break;
+            Emprestimo novoEmprestimo = Emprestimo.cadastrarEmprestimo();
+            System.out.println("\nEmprestimo Cadastrado");
+            System.out.println(novoEmprestimo.toString());
+            emprestimos.add(novoEmprestimo);
+           break;
 
             //Receber Emprestimo
-            case 6:
-            Estudante novoEstudante = Estudante.cadastrarEstudante();
-            System.out.println("\nEstudante Cadastrado");
-            System.out.println(novoEstudante.toString());
-            estudantes.add(novoEstudante);
-            break;
+           // case 6:
+           // Estudante novoEstudante = Estudante.cadastrarEstudante();
+           // System.out.println("\nEstudante Cadastrado");
+          //  System.out.println(novoEstudante.toString());
+           // estudantes.add(novoEstudante);
+           // break;
 
-            default:
+            default :
             System.out.println("Saindo da função escolha");
 
         }

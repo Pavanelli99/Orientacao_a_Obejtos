@@ -46,7 +46,7 @@ public class TesteExHeranca {
         est.setDtInicio(dataInit);
 
         //Objeto Emprestimo 
-        Emprestimo emprestimo1 = new Emprestimo();
+        Emprestimo emprestimo1 = new Emprestimo("eee");
         emprestimo1.setEstudante(est);
         emprestimo1.setFuncionario(func);
         emprestimo1.setLivro(livroPOO);

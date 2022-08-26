@@ -1,11 +1,17 @@
 package ex_heranca;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Autor extends Pessoa{
 
     private String formacao;
     private int qtdLivros; // nunca armazenar isso;
+
+
+    public Autor (String _formacao){
+        this.formacao = _formacao;
+    }
 
     public Autor(String nome, LocalDate dataNasc, String endereco, String formacao, int qtdLivros){
 
@@ -35,39 +41,21 @@ public class Autor extends Pessoa{
         return "Formação: " + this.formacao;
     }
 
-    public static Estudante cadastrarEstudante(){
+    public static Autor cadastrarAutor(){
         Scanner in = new Scanner(System.in);
-        System.out.print("Digite o RA do estudante:");
-        String RA = in.next();
-        if (RA.length() < 2){
-            System.out.println("O numero do RA não pode ser vazio!");
+        System.out.print("Digite o nome do Autor:");
+        String formacao = in.next();
+        if (formacao.length() < 2){
+            System.out.println("O nome não pode ser vazio!");
             in.close();
             return null;
         }
-        Estudante novoEstudante = new Estudante(RA);
-        System.out.print("Digite o nome do Estudante: ");
-        novoEstudante.setNome(in.next());
-
-        System.out.print("Digite a data de inicio (dd/mm/yy): ");
-        String data = in.next();
-        String dtLanc[] = data.split("/");
-
-        if (dtLanc.length != 3){
-            System.out.println("Digite a data corretamente");
-            in.close();
-            return null;
-        }
-
-        for(String d:dtLanc) System.out.println(d);
-
-        int dd = Integer.parseInt(dtLanc[0]);
-        int m = Integer.parseInt(dtLanc[1]);
-        int y = Integer.parseInt(dtLanc[2]);
-
-        LocalDate d = LocalDate.of(y, m, dd);
+        Autor novoAutor = new Autor(formacao);
+        System.out.print("Digite a formação do Autor:");
+        novoAutor.setFormacao(in.next());    
 
         in.close();
-        return novoEstudante;
+        return novoAutor;
 
     }
 
