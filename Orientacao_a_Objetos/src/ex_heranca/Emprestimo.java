@@ -85,7 +85,7 @@ public class Emprestimo extends Pessoa {
         String data1 = in.next();
 
         String dtEmp[] = data.split("/");
-        String dtDev[] = data1.split("/");
+        String dtDev[] = data1.split ("/");
 
         if (dtEmp.length != 3 && dtDev.length !=3){
             System.out.println("Digite a data corretamente");
