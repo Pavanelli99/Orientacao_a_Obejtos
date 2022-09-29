@@ -1,6 +1,7 @@
 package Rev_biblioteca;
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 public class Emprestimo {
     private Livro livro;
@@ -57,5 +58,27 @@ public class Emprestimo {
     public void setDtDevolucao(LocalDate dtDevolucao) {
         this.dtDevolucao = dtDevolucao;
     }
+
+    public static Funcionario lerEmprestimo(){
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Digite o nome do Livro: ");
+        String nomeLivro = in.nextLine();
+
+        System.out.println("Digite o nome do funcionario: ");
+        String nomeFunc = in.nextLine();
+
+        System.out.println("Digite o nome do estudante: ");
+        String nomeEstud = in.nextLine();
+
+        System.out.println("Digite a data de emprestimo (dd/mm/yyyy): ");
+        String dtEmprestimo = in.nextLine();
+
+
+        Funcionario objFuncionario = new Funcionario(matricula,nome);
+
+        return objFuncionario;
+    }
+
 
 }
